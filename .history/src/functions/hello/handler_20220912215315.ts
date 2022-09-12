@@ -4,7 +4,7 @@ import type { ValidatedEventAPIGatewayProxyEvent } from '@libs/api-gateway';
 
 import schema from './schema';
 
-const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async () => {
+const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify(`Hello and welcome to the exciting Serverless world!`)

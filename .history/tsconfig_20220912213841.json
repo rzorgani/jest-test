@@ -13,7 +13,7 @@
   "include": [
     "src/**/*.ts", 
     "serverless.ts",
-    "src/tests/**/*.ts", // include tests directory
+    "tests/**/*.ts", // include tests directory
   ],
   "exclude": [
     "node_modules/**/*",
